@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_image4"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_image5"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_image6"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_image7"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_image8"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_image9"
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_update" />
+</LinearLayout>
