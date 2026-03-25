@@ -1,5 +1,6 @@
 package com.example.cheems2
 
+import android.content.Intent
 import android.content.res.Resources
 import android.os.Bundle
 import android.util.Log
@@ -71,6 +72,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }else if (card == gameWin){
             Toast.makeText(this, "sptm ganaste...", Toast.LENGTH_SHORT).show()
+            findViewById<View>(R.id.btn_save).visibility = View.VISIBLE
             activeGame = false
             for (i in 1..9){
                 val btnCard = findViewById<View>(resources.getIdentifier("btn_image$i", "id", this.packageName)) as ImageButton
@@ -88,6 +90,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             counterWin ++
             if (counterWin == 7){
                 Toast.makeText(this, "you win", Toast.LENGTH_SHORT).show()
+                findViewById<View>(R.id.btn_save).visibility = View.VISIBLE
 
             }
         }
@@ -105,6 +108,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_image8 -> {flip(8)}
             R.id.btn_image9 -> {flip(9)}
             R.id.btn_update -> {start()}
+            R.id.btn_save -> {
+                val intentWinnerForm = Intent(this, WinnerFormActivity::class.java)
+                startActivity(intentWinnerForm)
+            }
         }
     }
 }

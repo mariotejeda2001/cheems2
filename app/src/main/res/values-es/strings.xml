@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">cheems2</string>
     <string name="txt_update">actualizar</string>
+    <string name="form_nickname">apodo</string>
+    <string name="btn_save">guardar</string>
+    <string name="form_name">nombre</string>
 </resources>
